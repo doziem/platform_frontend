@@ -1,9 +1,12 @@
-import Sidebar from "./component/Sidebar";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
     <div className="h-screen grid grid-rows-[auto_1fr]">
-      <Sidebar />
+      {/* <Layout /> */}
+      <main className="flex-1">
+        <Outlet />
+      </main>
     </div>
   );
 };
